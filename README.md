@@ -63,3 +63,21 @@ mac电脑的一些常用配置
 - robertohuertasm.vscode-icons
 - redhat.vscode-yaml
 - DotJoshJohnson.xml
+
+## 4. Vim Editor Setup
+
+> Check this [Repository][1]
+
+```shell
+# install basic vimrc version
+
+git clone --depth=1 https://github.com/EvanXzj/mac-setup ~/.vim_runtime
+sh ~/.vim_runtime/vimrcs/basic.sh
+```
+
+> **Manualy Install**: `just copy vimrcs/basic.vimrc content to .vimrc on your host machine`
+
+
+
+
+[1]: https://github.com/amix/vimrc
