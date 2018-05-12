@@ -70,14 +70,25 @@ mac电脑的一些常用配置
 
 ```shell
 # install basic vimrc version
-
-git clone --depth=1 https://github.com/EvanXzj/mac-setup ~/.vim_runtime
-sh ~/.vim_runtime/vimrcs/basic.sh
+git clone --depth=1 https://github.com/EvanXzj/mac-setup ~/.config_runtime
+sh ~/.config_runtime/vimrcs/basic.sh
 ```
 
 > **Manualy Install**: `just copy vimrcs/basic.vimrc content to .vimrc on your host machine`
 
+## 5. Tmux Setup
 
+> Check this [Repository][2]
 
+```shell
+# baisc setup
+sh ~/.config_runtime/tmux/install_basic_tmux.sh
+
+# change powerline theme if you need: 
+#
+# source-file "${HOME}/.tmux-themepack/powerline/block/${themename}.tmuxtheme"
+# # #
+```
 
 [1]: https://github.com/amix/vimrc
+[2]: https://github.com/EvanXzj/my-tmux-conf
