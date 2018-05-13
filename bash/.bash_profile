@@ -4,7 +4,8 @@ export NVM_DIR="$HOME/.nvm"
 # Setting PATH for GO build project [add by Evan]
 export GOPATH="$HOME/my-projects/go-workspace"
 
-# export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+# Setting yarn PATH
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 function parse_git_branch {
 git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
