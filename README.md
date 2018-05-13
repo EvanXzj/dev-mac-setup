@@ -90,5 +90,11 @@ sh ~/.config_runtime/tmux/install_basic_tmux.sh
 # # #
 ```
 
+## 6. Bash Setup
+
+> 参考 [Blog1][3], [Blog2][4]
+
 [1]: https://github.com/amix/vimrc
 [2]: https://github.com/EvanXzj/my-tmux-conf
+[3]: https://code.tutsplus.com/tutorials/how-to-customize-the-command-prompt--net-20586
+[4]: https://gist.github.com/natelandau/10654137
