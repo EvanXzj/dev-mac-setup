@@ -45,6 +45,7 @@ mac电脑的一些常用配置
 - Smart Websocket Client
 - OneTab
 - 掘金
+- Grammarly
 - ...
 
 ## 3. Vscod 插件 (和BitBucket vscode-config仓同步)
