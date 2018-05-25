@@ -36,7 +36,7 @@ mac电脑的一些常用配置
 - Dukto
 - ...
 
-## 2. Chrome 插件
+## 2. Chrome 插件
 
 - Vimium
 - ImTranslator
@@ -48,7 +48,7 @@ mac电脑的一些常用配置
 - Grammarly
 - ...
 
-## 3. Vscod 插件 (和BitBucket vscode-config仓同步)
+## 3. Vscod 插件(和BitBucket vscode-config仓同步)
 
 - dbaeumer.vscode-eslint
 - esbenp.prettier-vscode
