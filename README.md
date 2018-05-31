@@ -25,7 +25,7 @@ mac电脑的一些常用配置
 - Vagrant
 - Ngrok
 - Docker
-- DataGrip
+- DataGrip, license server: http://jetbrains.zplay.cc:1224/
 - NoSQLBooster for MongoDB
 - Node
 - Go
