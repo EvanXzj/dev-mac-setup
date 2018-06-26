@@ -94,6 +94,29 @@ sh ~/.config_runtime/tmux/install_basic_tmux.sh
 
 ## 6. Bash Setup
 
+
+## 7. Git Setup
+
+```bash 
+# git config -l             查看config列表
+# git config --global -e    修改全局的git config 配置
+
+# 同步个人的conmmit 到github
+# 在 [user] 下方添加以下两行
+    user.name=EvanXzj
+    user.email=2686465170@qq.com
+
+# 命令别名
+# 在[alias]下添加以下几行
+    st = status
+    chk = checkout
+    cm = commit -m
+    br = branch
+    unstage = reset HEAD
+    last = log -1
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+```
+
 > 参考 [Blog1][3], [Blog2][4]
 
 [1]: https://github.com/amix/vimrc
