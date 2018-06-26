@@ -34,6 +34,7 @@ mac电脑的一些常用配置
 - Principle
 - APP uninstaller
 - Dukto
+- DASH
 - ...
 
 ## 2. Chrome 插件
