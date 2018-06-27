@@ -36,6 +36,7 @@ mac电脑的一些常用配置
 - Dukto
 - DASH
 - Ipfs
+- NTFS for mac  移动硬盘拷贝东西使用
 - ...
 
 ## 2. Chrome 插件
