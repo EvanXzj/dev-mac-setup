@@ -37,6 +37,8 @@ mac电脑的一些常用配置
 - DASH
 - Ipfs
 - NTFS for mac  移动硬盘拷贝东西使用
+- 有道词典 英文翻译用
+- Grammarly 写英文文章用
 - ...
 
 ## 2. Chrome 插件
