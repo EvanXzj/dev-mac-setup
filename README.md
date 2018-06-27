@@ -47,6 +47,7 @@ mac电脑的一些常用配置
 - OneTab
 - 掘金
 - Grammarly
+- MetaMask
 - ...
 
 ## 3. Vscod 插件(和BitBucket vscode-config仓同步)
