@@ -39,6 +39,7 @@ mac电脑的一些常用配置
 - NTFS for mac  移动硬盘拷贝东西使用
 - 有道词典 英文翻译用
 - Grammarly 写英文文章用
+- DropBox
 - ...
 
 ## 2. Chrome 插件
@@ -54,7 +55,7 @@ mac电脑的一些常用配置
 - MetaMask
 - ...
 
-## 3. Vscod 插件(和BitBucket vscode-config仓同步)
+## 3. Vscode 插件(和BitBucket vscode-config仓同步)
 
 - dbaeumer.vscode-eslint
 - esbenp.prettier-vscode
@@ -70,6 +71,7 @@ mac电脑的一些常用配置
 - robertohuertasm.vscode-icons
 - redhat.vscode-yaml
 - DotJoshJohnson.xml
+- vitorsalgado.vscode-glide
 
 ## 4. Vim Editor Setup
 
