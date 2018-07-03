@@ -72,6 +72,7 @@ mac电脑的一些常用配置
 - redhat.vscode-yaml
 - DotJoshJohnson.xml
 - vitorsalgado.vscode-glide
+- editorconfig.editorconfig
 
 ## 4. Vim Editor Setup
 
