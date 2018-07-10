@@ -41,6 +41,7 @@ mac电脑的一些常用配置
 - Grammarly 写英文文章用
 - DropBox
 - Oh-My-Zsh
+- Direnv
 - ...
 
 ## 2. Chrome 插件
