@@ -40,6 +40,7 @@ mac电脑的一些常用配置
 - 有道词典 英文翻译用
 - Grammarly 写英文文章用
 - DropBox
+- Oh-My-Zsh
 - ...
 
 ## 2. Chrome 插件
