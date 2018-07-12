@@ -54,7 +54,14 @@ mac电脑的一些常用配置
 - OneTab
 - 掘金
 - Grammarly
-- MetaMask
+- MetaMas
+- New Tap Startup Quotes
+- JSON Viewer
+- Turn off lights
+- Google Translation
+- Save to Packet
+- Adblock plus
+- Lastpass
 - ...
 
 ## 3. Vscode 插件(和BitBucket vscode-config仓同步)
