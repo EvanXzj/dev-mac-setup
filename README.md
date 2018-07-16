@@ -62,6 +62,7 @@ mac电脑的一些常用配置
 - Save to Packet
 - Adblock plus
 - Lastpass
+- Better Go Playground
 - ...
 
 ## 3. Vscode 插件(和BitBucket vscode-config仓同步)
