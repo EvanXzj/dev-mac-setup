@@ -42,6 +42,8 @@ mac电脑的一些常用配置
 - DropBox
 - Oh-My-Zsh
 - Direnv
+- sublime text
+- Ganache
 - ...
 
 ## 2. Chrome 插件
@@ -63,6 +65,10 @@ mac电脑的一些常用配置
 - Adblock plus
 - Lastpass
 - Better Go Playground
+- Checker Plus for Gmail
+- SwitchyOmega
+- fehelper
+- NIM(Node调试器)
 - ...
 
 ## 3. Vscode 插件(和BitBucket vscode-config仓同步)
@@ -83,6 +89,10 @@ mac电脑的一些常用配置
 - DotJoshJohnson.xml
 - vitorsalgado.vscode-glide
 - editorconfig.editorconfig
+- bungcip.better-toml
+- wallabyjs.quokka-vscode
+- juanblanco.solidity
+
 
 ## 4. Vim Editor Setup
 
