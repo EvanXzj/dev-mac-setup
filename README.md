@@ -1,4 +1,5 @@
 # mac-setup
+
 mac电脑的一些常用配置
 
 ## 1. 软件
@@ -25,12 +26,12 @@ mac电脑的一些常用配置
 - Vagrant
 - Ngrok
 - Docker
-- DataGrip, license server: http://jetbrains.zplay.cc:1224/
+- DataGrip, license server: `http://jetbrains.zplay.cc:1224/`
 - NoSQLBooster for MongoDB
 - Node
 - Go
 - 百度网盘
-- Things 
+- Things
 - Principle
 - APP uninstaller
 - Dukto
@@ -93,7 +94,6 @@ mac电脑的一些常用配置
 - wallabyjs.quokka-vscode
 - juanblanco.solidity
 
-
 ## 4. Vim Editor Setup
 
 > Check this [Repository][1]
@@ -114,7 +114,7 @@ sh ~/.config_runtime/vimrcs/basic.sh
 # baisc setup
 sh ~/.config_runtime/tmux/install_basic_tmux.sh
 
-# change powerline theme if you need: 
+# change powerline theme if you need:
 #
 # source-file "${HOME}/.tmux-themepack/powerline/block/${themename}.tmuxtheme"
 # # #
@@ -122,10 +122,9 @@ sh ~/.config_runtime/tmux/install_basic_tmux.sh
 
 ## 6. Bash Setup
 
-
 ## 7. Git Setup
 
-```bash 
+```bash
 # git config -l             查看config列表
 # git config --global -e    修改全局的git config 配置
 
