@@ -93,6 +93,7 @@ mac电脑的一些常用配置
 - bungcip.better-toml
 - wallabyjs.quokka-vscode
 - juanblanco.solidity
+- VS Code for Node.js - Development Pack
 
 ## 4. Vim Editor Setup
 
