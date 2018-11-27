@@ -45,12 +45,13 @@ mac电脑的一些常用配置
 - Direnv
 - sublime text
 - Ganache
+- Minutes
 - ...
 
 ## 2. Chrome 插件
 
 - Vimium
-- ImTranslator
+- ~~ImTranslator~~
 - Octotree
 - Momentum
 - Smart Websocket Client
@@ -94,6 +95,7 @@ mac电脑的一些常用配置
 - wallabyjs.quokka-vscode
 - juanblanco.solidity
 - VS Code for Node.js - Development Pack
+- jakebathman.mysql-syntax
 
 ## 4. Vim Editor Setup
 
