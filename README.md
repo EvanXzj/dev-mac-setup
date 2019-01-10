@@ -26,7 +26,9 @@ mac电脑的一些常用配置
 - Vagrant
 - Ngrok
 - Docker
-- DataGrip, license server: `http://jetbrains.zplay.cc:1224/`, 2018.1版本之前有效
+- DataGrip, license server: `http://jetbrains.license.laucyun.com (Lower of 2017.3)
+                             http://45.77.132.137:8000 (Lower of 2018.2)`
+- Workbench
 - NoSQLBooster for MongoDB
 - Node
 - Go
