@@ -26,7 +26,7 @@ mac电脑的一些常用配置
 - Vagrant
 - Ngrok
 - Docker
-- DataGrip, license server: `http://jetbrains.zplay.cc:1224/`
+- DataGrip, license server: `http://jetbrains.zplay.cc:1224/`, 2018.1版本之前有效
 - NoSQLBooster for MongoDB
 - Node
 - Go
@@ -39,6 +39,7 @@ mac电脑的一些常用配置
 - Ipfs
 - NTFS for mac  移动硬盘拷贝东西使用
 - 有道词典 英文翻译用
+- 有道云笔记
 - Grammarly 写英文文章用
 - DropBox
 - Oh-My-Zsh
