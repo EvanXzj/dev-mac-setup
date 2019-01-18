@@ -127,7 +127,6 @@ function prepare() {
 	echo "### $result" | tee README.md
 }
 
-
 function _go() {
 	folder=${PWD##*/}
 	mkdir -p cmd/${folder}
@@ -191,4 +190,12 @@ function ready() {
 	echo "ready $1 env"
 
 	prepare
+}
+
+# node project init
+function node-init {
+	npx license $(npm get init.license) -o "$(npm get init.author.name)" > LICENSE
+	npx gitignore node
+	npx covgen "$(npm get init.author.email)"
+	npm init -y
 }
