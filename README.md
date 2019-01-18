@@ -26,8 +26,8 @@ mac电脑的一些常用配置
 - Vagrant
 - Ngrok
 - Docker
-- DataGrip, license server: `http://jetbrains.license.laucyun.com (Lower of 2017.3)
-                             http://45.77.132.137:8000 (Lower of 2018.2)`
+- DataGrip,
+    license server: `http://jetbrains.license.laucyun.com (Lower of 2017.3); http://45.77.132.137:8000 (Lower of 2018.2)`
 - Workbench
 - NoSQLBooster for MongoDB
 - Node
@@ -104,9 +104,10 @@ mac电脑的一些常用配置
 
 > Check this [Repository][1]
 
-```shell
+```bash
 # install basic vimrc version
 git clone --depth=1 https://github.com/EvanXzj/mac-setup ~/.config_runtime
+
 sh ~/.config_runtime/vimrcs/basic.sh
 ```
 
@@ -116,7 +117,7 @@ sh ~/.config_runtime/vimrcs/basic.sh
 
 > Check this [Repository][2]
 
-```shell
+```bash
 # baisc setup
 sh ~/.config_runtime/tmux/install_basic_tmux.sh
 
@@ -148,6 +149,16 @@ sh ~/.config_runtime/tmux/install_basic_tmux.sh
     unstage = reset HEAD
     last = log -1
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+```
+
+## 8. NPM Setup
+
+```bash
+npm set init.author.name "chuidylan"
+npm set init.author.email "chuidylan@gmail.com"
+npm set init.author.url "blog.chuidylan.com"
+npm set init.license "MIT"
+npm set init.version "1.0.0"
 ```
 
 > 参考 [Blog1][3], [Blog2][4]
