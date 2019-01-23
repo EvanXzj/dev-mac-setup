@@ -37,3 +37,4 @@ ConfigVim:
 
 ConfigBash:
 	cat  ~/.config_runtime/bash/.bash_profile > ~/.bash_profile
+
