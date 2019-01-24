@@ -19,6 +19,7 @@ mac电脑的一些常用配置
 - SourceTree
 - Vscode
 - Postman
+- Insomnia
 - Charles
 - iTerm2
 - Tmux
@@ -49,6 +50,7 @@ mac电脑的一些常用配置
 - sublime text
 - Ganache
 - Minutes
+- Kitematic
 - ...
 
 ## 2. Chrome 插件
@@ -99,6 +101,9 @@ mac电脑的一些常用配置
 - juanblanco.solidity
 - VS Code for Node.js - Development Pack
 - jakebathman.mysql-syntax
+- mikestead.dotenv
+- codezombiech.gitignore
+- ziyasal.vscode-open-in-github
 
 ## 4. Vim Editor Setup
 
