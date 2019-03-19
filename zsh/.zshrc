@@ -199,3 +199,8 @@ function node-init {
 	npx covgen "$(npm get init.author.email)"
 	npm init -y
 }
+
+# auto start a tmux session
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+    tmux attach -t default || tmux new -s default
+fi

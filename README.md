@@ -51,6 +51,7 @@ mac电脑的一些常用配置
 - Ganache
 - Minutes
 - Kitematic
+- GoLand
 - ...
 
 ## 2. Chrome 插件

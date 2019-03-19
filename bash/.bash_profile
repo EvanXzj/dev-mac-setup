@@ -84,3 +84,8 @@ PS1='->'
 
 # direnv setup
 # eval "$(direnv hook bash)"
+
+# auto start a tmux session
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+    tmux attach -t default || tmux new -s default
+fi
