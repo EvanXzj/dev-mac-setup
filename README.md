@@ -77,6 +77,7 @@ mac电脑的一些常用配置
 - SwitchyOmega
 - fehelper
 - NIM(Node调试器)
+- sourcegraph
 - ...
 
 ## 3. Vscode 插件(和BitBucket vscode-config仓同步)
