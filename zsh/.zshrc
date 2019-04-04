@@ -6,35 +6,37 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # This load Yarn
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+# export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
-####### doesn't work!!!!#####################
-# pure theme configuration
-# for more information please see: https://github.com/sindresorhus/pure#getting-started
-# autoload -U promptinit; promptinit
-# prompt pure
+# mongodb path setup
+export PATH=$HOME/mongodb/mongodb-osx-x86_64-4.0.5/bin:$PATH
+
+# Golang path setup
+export GOPATH=$HOME/Golang
+export PATH=$PATH:$(go env GOPATH)/bin
+export GOBIN=$(go env GOPATH)/bin
+# export GOOS="linux"
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/zhijian/.oh-my-zsh"
+export ZSH="/Users/admin/.oh-my-zsh"
 
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
-# ZSH_THEME="igeek"
 
-# Set list of themes to load
-# Setting this variable when ZSH_THEME=random
-# cause zsh load theme from this variable instead of
-# looking in ~/.oh-my-zsh/themes/
-# An empty array have no effect
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
+# If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
-CASE_SENSITIVE="true"
+# CASE_SENSITIVE="true"
 
-# Uncomment the following line to use hyphen-insensitive completion. Case
-# sensitive completion must be off. _ and - will be interchangeable.
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
@@ -62,19 +64,26 @@ CASE_SENSITIVE="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
-# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Which plugins would you like to load?
+# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  docker
   git
   zsh-syntax-highlighting
+  golang
+  autojump
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -111,96 +120,30 @@ alias c='clear'                             # c:            Clear terminal displ
 alias ll='ls -FGlAhp'                       # Preferred 'ls' implementation
 alias less='less -FSRXc'                    # Preferred 'less' implementation
 alias qfind="find . -name "                 # qfind:    Quickly search for file
+alias dm='docker-machine'                   # docker-machine alias
 
-# env path manage package direnv setup
-eval "$(direnv hook zsh)"
-
-##################################################################################################
-#################################  prepare programing env ########################################
-##################################################################################################
-function prepare() {
-	echo '@1. prepeard editorconfig config'
-	curl -sL https://raw.githubusercontent.com/cheerfyt/dotfile/master/editor/editorconfig > .editorconfig
-
-	echo '@2. prepeard folder'
-	result=${PWD##*/}
-	echo "### $result" | tee README.md
-}
-
-function _go() {
-	folder=${PWD##*/}
-	mkdir -p cmd/${folder}
-
-	date=`date "+%Y-%m-%d %H:%M:%S"`
-
-	cat > cmd/${folder}/${folder}.go << __EOF__
-// $(whoami) @ ${date} create this file
-
-package main
-
-import (
-	"fmt"
-)
-
-func main() {
-	fmt.Println("hello, ${folder}")
-}
-
-__EOF__
-
-	glide init --non-interactive
-
-	cat > Makefile << __EOF__
-##### ${folder}
-all:run
-
-run:
-	@go run cmd/${folder}/${folder}.go
-
-build:
-	@go build -o bin/${folder} cmd/${folder}/${folder}.go
-__EOF__
-}
-
-function _node() {
-	npm init --yes
-	echo 'module.exports = {}' > index.js
-}
-
-function ready() {
-	echo "prepare $1 env !!!"
-
-	case $1 in
-		Golang);&
-		golang);&
-		go)_go;;
-
-		Node);&
-		node);&
-		ne) _node;;
-
-		*) echo "nothing";
-	esac
-
-	content=`curl -sL https://www.gitignore.io/api/$1`
-	err=`echo $content | grep ERROR`
-	[[ -z $err ]] && echo "Got ignore content"
-	echo $content | tee .gitignore
-
-	echo "ready $1 env"
-
-	prepare
-}
-
-# node project init
-function node-init {
-	npx license $(npm get init.license) -o "$(npm get init.author.name)" > LICENSE
-	npx gitignore node
-	npx covgen "$(npm get init.author.email)"
-	npm init -y
-}
+# autojump
+# [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh 
 
 # auto start a tmux session
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
     tmux attach -t default || tmux new -s default
 fi
+
+# node project init
+function node-init {
+    npx license $(npm get init.license) -o "$(npm get init.author.name)" > LICENSE
+    npx gitignore node
+    npx covgen "$(npm get init.author.email)"
+    npm init -y
+    touch README.md
+}
+
+# direnv setup
+# eval "$(direnv hook zsh)"
+
+# The next line updates PATH for the Google Cloud SDK.
+# if [ -f '/Users/admin/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/admin/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+# if [ -f '/Users/admin/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/admin/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
