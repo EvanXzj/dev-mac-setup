@@ -78,6 +78,7 @@ mac电脑的一些常用配置
 - fehelper
 - NIM(Node调试器)
 - sourcegraph
+- Reader View
 - ...
 
 ## 3. Vscode 插件(和BitBucket vscode-config仓同步)
