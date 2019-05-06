@@ -80,6 +80,7 @@ mac电脑的一些常用配置
 - sourcegraph
 - Reader View
 - SimpRead
+- Extension Manager
 - ...
 
 ## 3. Vscode 插件(和BitBucket vscode-config仓同步)
