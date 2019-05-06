@@ -79,6 +79,7 @@ mac电脑的一些常用配置
 - NIM(Node调试器)
 - sourcegraph
 - Reader View
+- SimpRead
 - ...
 
 ## 3. Vscode 插件(和BitBucket vscode-config仓同步)
