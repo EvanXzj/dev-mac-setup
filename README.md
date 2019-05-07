@@ -52,6 +52,7 @@ mac电脑的一些常用配置
 - Minutes
 - Kitematic
 - GoLand
+- Irvue 桌面壁纸
 - ...
 
 ## 2. Chrome 插件
