@@ -121,14 +121,21 @@ alias ll='ls -FGlAhp'                       # Preferred 'ls' implementation
 alias less='less -FSRXc'                    # Preferred 'less' implementation
 alias qfind="find . -name "                 # qfind:    Quickly search for file
 alias dm='docker-machine'                   # docker-machine alias
+alias cat=bat                               # better cat
+alias help=tldr                             # simple man page
+
+# brew install fzf and watch the output
+alias preview="fzf --preview 'bat --color \"always\" {}'"
+# add support for ctrl+o to open selected file in VS Code
+export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
 
 # autojump
 # [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh 
 
 # auto start a tmux session
-if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-    tmux attach -t default || tmux new -s default
-fi
+# if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+#     tmux attach -t default || tmux new -s default
+# fi
 
 # node project init
 function node-init {
@@ -138,12 +145,3 @@ function node-init {
     npm init -y
     touch README.md
 }
-
-# direnv setup
-# eval "$(direnv hook zsh)"
-
-# The next line updates PATH for the Google Cloud SDK.
-# if [ -f '/Users/admin/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/admin/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-# if [ -f '/Users/admin/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/admin/Downloads/google-cloud-sdk/completion.zsh.inc'; fi

@@ -131,7 +131,7 @@ sh ~/.config_runtime/vimrcs/basic.sh
 > Check this [Repository][2]
 
 ```bash
-# baisc setup
+# baisc setup, 有直接检测安装brew, powerline theme
 sh ~/.config_runtime/tmux/install_basic_tmux.sh
 
 # change powerline theme if you need:
@@ -141,6 +141,8 @@ sh ~/.config_runtime/tmux/install_basic_tmux.sh
 ```
 
 ## 6. Bash Setup
+
+*安装[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), 在~/.oh-my-zsh/custom/plugins种安装插件，参考[博客](https://keyholesoftware.com/2015/05/04/zsh/)*
 
 ## 7. Git Setup
 
