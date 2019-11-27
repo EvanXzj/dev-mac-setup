@@ -112,6 +112,7 @@ mac电脑的一些常用配置
 - mikestead.dotenv
 - codezombiech.gitignore
 - ziyasal.vscode-open-in-github
+- streetsidesoftware.code-spell-checker
 
 ## 4. Vim Editor Setup
 
