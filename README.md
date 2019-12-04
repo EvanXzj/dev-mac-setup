@@ -177,6 +177,16 @@ npm set init.license "MIT"
 npm set init.version "1.0.0"
 ```
 
+## 9. Other
+
+- fzf
+- fd
+- bat
+- htop
+- tree
+- Verdaccio
+- arc
+
 > 参考 [Blog1][3], [Blog2][4]
 
 [1]: https://github.com/amix/vimrc
