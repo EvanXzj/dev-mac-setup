@@ -165,6 +165,10 @@ sh ~/.config_runtime/tmux/install_basic_tmux.sh
     unstage = reset HEAD
     last = log -1
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+# [pager]
+    diff = diff-so-fancy | less --tabs=1,5 -RFX
+    show = diff-so-fancy | less --tabs=1,5 -RFX
 ```
 
 ## 8. NPM Setup
@@ -186,11 +190,14 @@ npm set init.version "1.0.0"
 - tree
 - Verdaccio
 - arc
+- diff-so-fancy
+- ncdu  zsh alias `alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"`
+- tldr  zsh alias `alias help='tldr'`
 
-> 参考 [Blog1][3], [Blog2][4]
+> 参考 [Blog1][3], [Blog2][4], [CLI Improved][5]
 
 [1]: https://github.com/amix/vimrc
 [2]: https://github.com/EvanXzj/my-tmux-conf
 [3]: https://code.tutsplus.com/tutorials/how-to-customize-the-command-prompt--net-20586
 [4]: https://gist.github.com/natelandau/10654137
-
+[5]: https://remysharp.com/2018/08/23/cli-improved#targetText=%5Bpager%5D%0A%20%20%20%20%20%20%20diff%20%3D%20diff-so-fancy%20%7C%20less%20--tabs%3D1%2C5%20-RFX%0A%20%20%20%20%20%20%20show%20%3D%20diff-so-fancy%20%7C%20less%20--tabs%3D1%2C5%20-RFX
