@@ -193,6 +193,7 @@ npm set init.version "1.0.0"
 - diff-so-fancy
 - ncdu  zsh alias `alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"`
 - tldr  zsh alias `alias help='tldr'`
+- hugo
 
 > 参考 [Blog1][3], [Blog2][4], [CLI Improved][5]
 
