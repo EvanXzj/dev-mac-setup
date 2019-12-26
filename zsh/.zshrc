@@ -1,24 +1,28 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# This loads nvm 
+# This loads nvm
 export NVM_DIR="$HOME/.nvm"
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # This load Yarn
-# export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # mongodb path setup
-export PATH=$HOME/mongodb/mongodb-osx-x86_64-4.0.5/bin:$PATH
+# export PATH=$HOME/mongodb/mongodb-osx-x86_64-4.0.5/bin:$PATH
 
 # Golang path setup
-export GOPATH=$HOME/Golang
-export PATH=$PATH:$(go env GOPATH)/bin
-export GOBIN=$(go env GOPATH)/bin
+# export GOPATH=$HOME/Golang
+# export PATH=$PATH:$(go env GOPATH)/bin
+# export GOBIN=$(go env GOPATH)/bin
 # export GOOS="linux"
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/admin/.oh-my-zsh"
+export ZSH="/Users/xuzhijian/.oh-my-zsh"
+
+# arcanist path setup
+# export PATH=$PATH:$HOME/arc/arcanist/bin
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -130,18 +134,27 @@ alias preview="fzf --preview 'bat --color \"always\" {}'"
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
 
 # autojump
-# [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh 
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh 
 
 # auto start a tmux session
 # if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
 #     tmux attach -t default || tmux new -s default
 # fi
 
-# node project init
-function node-init {
-    npx license $(npm get init.license) -o "$(npm get init.author.name)" > LICENSE
-    npx gitignore node
-    npx covgen "$(npm get init.author.email)"
-    npm init -y
-    touch README.md
+# node project init function
+function node_init {
+  git init
+  npx license $(npm get init.license) -o "$(npm get init.author.name)" > LICENSE
+  npx gitignore node
+  npx covgen "$(npm get init.author.email)"
+  echo "# $(basename $(pwd))" > README.md
+  npm init -y
+  git add -A
+  git commit -m "Initial commit"
 }
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Setting fd as the default source for fzf
+export FZF_DEFAULT_COMMAND='fd --type f -E .git --hidden -E node_modules'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
