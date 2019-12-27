@@ -127,6 +127,7 @@ alias qfind="find . -name "                 # qfind:    Quickly search for file
 alias dm='docker-machine'                   # docker-machine alias
 alias cat=bat                               # better cat
 alias help=tldr                             # simple man page
+alias reload=". ~/.zshrc && echo 'Your zshrc file has been reloaded'"  # reload zshrc
 
 # brew install fzf and watch the output
 alias preview="fzf --preview 'bat --color \"always\" {}'"
