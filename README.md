@@ -113,6 +113,11 @@ mac电脑的一些常用配置
 - codezombiech.gitignore
 - ziyasal.vscode-open-in-github
 - streetsidesoftware.code-spell-checker
+- pnp.polacode
+- zxh404.vscode-proto3
+- mhutchie.git-graph
+- oderwat.indent-rainbow
+- formulahendry.code-runner
 
 ## 4. Vim Editor Setup
 
