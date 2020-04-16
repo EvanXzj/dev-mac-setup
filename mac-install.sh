@@ -59,6 +59,7 @@ brew install ethereum
 brew install golang
 brew install kubectl
 brew install minikube
+brew install direnv
 
 #############
 # Setup Git
@@ -83,6 +84,11 @@ brew install zsh
 # install ohmyzsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 curl -Lo "$HOME/.zshrc" https://raw.githubusercontent.com/EvanXzj/dev-mac-setup/master/zsh/.zshrc
+
+### 
+### config direnv
+###
+echo 'eval "$(direnv hook zsh)"' >> "$HOME/.zshrc"
 
 ### setup tmux
 git clone https://github.com/jimeh/tmux-themepack.git ~/.tmux-themepack
@@ -109,8 +115,11 @@ npm set init.license "MIT"
 npm set init.version "1.0.0"
 
 #### chsh to zsh and source .zshrc
+#### please becare for $USER, plugins missing problem
+### ref: https://keyholesoftware.com/2015/05/04/zsh/
 chsh -s zsh
 source "$HOME/.zshrc"
+
 
 # Done.
 echo "All Done. Your SSH Key is on the clipboard, ready for pasting into Github"
