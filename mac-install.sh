@@ -24,8 +24,8 @@ brew install brew-cask
 #     vscode, chrome, typora, iTerm2, docker, virtualbox, datagrip      #
 #     sequel-pro, sourcetree, grammarly, slack, telegram, atom, ganache #
 #########################################################################
-brew cask install visual-studio-code 
-brew cask install google-chrome 
+brew cask install visual-studio-code
+brew cask install google-chrome
 brew cask install typora
 brew cask install iterm2
 brew cask install docker       # Install Docker
@@ -38,19 +38,20 @@ brew cask install slack
 brew cask install telegram
 brew cask install atom
 brew cask install ganache
+brew cask install nosqlbooster-for-mongodb
 
 #########################################################################
 #                    Install System Tools                               #
 #########################################################################
 brew install git
-brew install tree 
-brew install htop 
-brew install fzf 
-brew install hd 
-brew install bat 
-brew install diff-so-fancy 
-brew install ncdu 
-brew install hugo 
+brew install tree
+brew install htop
+brew install fzf
+brew install hd
+brew install bat
+brew install diff-so-fancy
+brew install ncdu
+brew install hugo
 brew install tmux
 brew install autojump
 brew install onefetch
@@ -79,13 +80,13 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 ssh-keygen
 pbcopy < ~/.ssh/id_rsa.pub
 
-### ZSH replacing shell. 
+### ZSH replacing shell.
 brew install zsh
 # install ohmyzsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 curl -Lo "$HOME/.zshrc" https://raw.githubusercontent.com/EvanXzj/dev-mac-setup/master/zsh/.zshrc
 
-### 
+###
 ### config direnv
 ###
 echo 'eval "$(direnv hook zsh)"' >> "$HOME/.zshrc"
