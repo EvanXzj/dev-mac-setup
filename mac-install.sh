@@ -39,6 +39,7 @@ brew cask install telegram
 brew cask install atom
 brew cask install ganache
 brew cask install nosqlbooster-for-mongodb
+brwe cask install sublime-text
 
 #########################################################################
 #                    Install System Tools                               #
