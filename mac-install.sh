@@ -122,6 +122,7 @@ npm set init.version "1.0.0"
 chsh -s zsh
 source "$HOME/.zshrc"
 
+## python3
 
 # Done.
 echo "All Done. Your SSH Key is on the clipboard, ready for pasting into Github"

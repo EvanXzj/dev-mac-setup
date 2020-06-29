@@ -13,16 +13,16 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # export PATH=$HOME/mongodb/mongodb-osx-x86_64-4.0.5/bin:$PATH
 
 # Golang path setup
-# export GOPATH=$HOME/Golang
-# export PATH=$PATH:$(go env GOPATH)/bin
-# export GOBIN=$(go env GOPATH)/bin
+export GOPATH=$HOME/go
+export PATH=$PATH:$(go env GOPATH)/bin
+export GOBIN=$(go env GOPATH)/bin
 # export GOOS="linux"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/xuzhijian/.oh-my-zsh"
 
 # arcanist path setup
-# export PATH=$PATH:$HOME/arc/arcanist/bin
+export PATH=$PATH:$HOME/arc/arcanist/bin
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -127,7 +127,8 @@ alias qfind="find . -name "                 # qfind:    Quickly search for file
 alias dm='docker-machine'                   # docker-machine alias
 alias cat=bat                               # better cat
 alias help=tldr                             # simple man page
-alias reload=". ~/.zshrc && echo 'Your zshrc file has been reloaded'"  # reload zshrc
+alias py3=python3
+alias reload=". ~/.zshrc && echo 'Your zshrc file has been reloaded'"
 
 # brew install fzf and watch the output
 alias preview="fzf --preview 'bat --color \"always\" {}'"
@@ -159,3 +160,6 @@ function node_init {
 # Setting fd as the default source for fzf
 export FZF_DEFAULT_COMMAND='fd --type f -E .git --hidden -E node_modules'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+# direnv setup
+eval "$(direnv hook zsh)"
