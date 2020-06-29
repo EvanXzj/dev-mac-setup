@@ -48,7 +48,6 @@ brew install git
 brew install tree
 brew install htop
 brew install fzf
-brew install hd
 brew install bat
 brew install diff-so-fancy
 brew install ncdu
@@ -74,6 +73,8 @@ git config --global alias.br branch
 git config --global alias.unstage "reset HEAD"
 git config --global alias.last "log -1"
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+git config --global alias.reset1 "reset --soft HEAD~1"
+git config --global alias.discard "checkout ."
 
 #############
 # SSH-keygen
