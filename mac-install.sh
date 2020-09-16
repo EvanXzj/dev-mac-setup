@@ -40,6 +40,7 @@ brew cask install atom
 brew cask install ganache
 brew cask install nosqlbooster-for-mongodb
 brwe cask install sublime-text
+brew cask install keepassxc
 
 #########################################################################
 #                    Install System Tools                               #
@@ -88,6 +89,9 @@ brew install zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 curl -Lo "$HOME/.zshrc" https://raw.githubusercontent.com/EvanXzj/dev-mac-setup/master/zsh/.zshrc
 
+## fzf setup
+## 根据输出install 一下 
+
 ###
 ### config direnv
 ###
@@ -107,7 +111,7 @@ brew update && brew upgrade && brew cleanup && brew cask cleanup
 # install nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
 # install newest lts node
-nvm install (nvm ls-remote --lts |  tail -n 1 | awk '{ print $1}')
+nvm install $(nvm ls-remote --lts |  tail -n 1 | awk '{ print $1}')
 # install verdaccio, yarn, pm2...
 npm install -g verdaccio yarn pm2@latest tldr truffle
 # npm init config

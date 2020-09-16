@@ -209,3 +209,7 @@ npm set init.version "1.0.0"
 [3]: https://code.tutsplus.com/tutorials/how-to-customize-the-command-prompt--net-20586
 [4]: https://gist.github.com/natelandau/10654137
 [5]: https://remysharp.com/2018/08/23/cli-improved#targetText=%5Bpager%5D%0A%20%20%20%20%20%20%20diff%20%3D%20diff-so-fancy%20%7C%20less%20--tabs%3D1%2C5%20-RFX%0A%20%20%20%20%20%20%20show%20%3D%20diff-so-fancy%20%7C%20less%20--tabs%3D1%2C5%20-RFX
+
+## TODO
+
+重新写一下 mac-install.sh
