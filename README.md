@@ -55,6 +55,11 @@ mac电脑的一些常用配置
 - Irvue 桌面壁纸
 - [SwitchHosts](https://github.com/oldj/SwitchHosts/releases)
 - Mounty
+- iStat Menus
+- keePassXc
+- Atomic Wallet
+- Notion
+- trojan-qt5
 - ...
 
 ## 2. Chrome 插件
