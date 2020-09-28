@@ -62,6 +62,7 @@ brew install golang
 brew install kubectl
 brew install minikube
 brew install direnv
+brew install gh # github cli
 
 #############
 # Setup Git
