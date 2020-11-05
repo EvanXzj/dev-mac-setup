@@ -63,6 +63,9 @@ brew install kubectl
 brew install minikube
 brew install direnv
 brew install gh # github cli
+brew install glow
+brew tap charmbracelet/tap && brew install charmbracelet/tap/charm
+
 
 #############
 # Setup Git
@@ -128,7 +131,9 @@ npm set init.version "1.0.0"
 chsh -s zsh
 source "$HOME/.zshrc"
 
-## python3
+## npm install
+npm install gitbook-cli -g
+npm install oclif -g
 
 # Done.
 echo "All Done. Your SSH Key is on the clipboard, ready for pasting into Github"
