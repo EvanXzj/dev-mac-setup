@@ -65,6 +65,7 @@ brew install direnv
 brew install gh # github cli
 brew install glow
 brew tap charmbracelet/tap && brew install charmbracelet/tap/charm
+brew install asciinema  #  asciinema rec
 
 
 #############
@@ -94,7 +95,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 curl -Lo "$HOME/.zshrc" https://raw.githubusercontent.com/EvanXzj/dev-mac-setup/master/zsh/.zshrc
 
 ## fzf setup
-## 根据输出install 一下 
+## 根据输出install 一下
 
 ###
 ### config direnv
