@@ -60,6 +60,8 @@ mac电脑的一些常用配置
 - Atomic Wallet
 - Notion
 - trojan-qt5
+- Another Redis Desktop Manager
+- DB Browser for SQLite
 - ...
 
 ## 2. Chrome 插件
