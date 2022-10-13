@@ -1,0 +1,18 @@
+User ubuntu
+HostName 3.1.161.253
+IdentityFile ~/.ssh/vrh-common.pem
+
+Host tencent
+HostName 101.43.252.252
+User root
+
+Host strategy
+HostName 8.210.221.60
+User root
+
+Host *
+ServerAliveInterval 300
+ServerAliveCountMax 10
+ControlMaster auto
+ControlPath ~/.ssh/%h-%p-%r
+ControlPersist yes
