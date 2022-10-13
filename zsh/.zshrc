@@ -144,23 +144,8 @@ export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
 #     tmux attach -t default || tmux new -s default
 # fi
 
-# node project init function
-function node_init {
-  git init
-  npx license $(npm get init.license) -o "$(npm get init.author.name)" > LICENSE
-  npx gitignore node
-  npx covgen "$(npm get init.author.email)"
-  echo "# $(basename $(pwd))" > README.md
-  npm init -y
-  git add -A
-  git commit -m "Initial commit"
-}
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Setting fd as the default source for fzf
 export FZF_DEFAULT_COMMAND='fd --type f -E .git --hidden -E node_modules'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-
-# direnv setup
-eval "$(direnv hook zsh)"
